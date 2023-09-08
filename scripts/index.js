@@ -6,6 +6,9 @@ var bestseller = ["1%를 읽는 힘:0","세이노의 가르침:0","내 소리가
 ajax_Fuc(bestseller,'bestseller_box',20);
 var newbook = ["21세기 한국 지성의 몰락:0","설민석의 한국사 대모험26:0","Go Go 카카오프렌즈 29:0","결혼ㆍ여름:0","정재승의 인간 탐구 보고서 12:0"];
 ajax_Fuc(newbook,'newbook_box',20);
+var recommand_box = ["치유를 파는 찻집:0","있을 법한 모든 것:0","마주:1","알레스카 샌더스 사건 1:0","나 같은 기계들:0","이 안에 당신의 수명이 들어 있습니다:0","육교 시네마:0","잘못된 장소 잘못된 시간:0","못 먹는 남자:0","낮은 해상도로부터:0"];
+ajax_Fuc(recommand_box,'recommand_box',20);
+
 
 
 function ajax_Fuc(search,classname,num){

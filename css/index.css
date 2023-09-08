@@ -479,41 +479,37 @@ article .art1_container3 .container1 .container1_content_box ul li {
   width: 20%;
   padding: 0 15px;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box {
   display: flex;
   flex-wrap: wrap;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .img {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .img {
   width: 100%;
   height: 258px;
   margin-bottom: 10px;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .num {
-  width: 10%;
-  font-size: 0.75rem;
-}
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont {
   width: 90%;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont .title {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont .title {
   font-size: 0.9rem;
   height: 38px;
   line-height: 1.2rem;
   margin-bottom: 6px;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont .author {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont .author {
   display: flex;
   font-size: 0.82rem;
   color: #999999;
   height: 32px;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont .price {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont .price {
   display: flex;
   height: 20px;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont .price h2 {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont .price h2 {
   font-size: 1rem;
 }
-article .art1_container3 .container1 .container1_content_box ul li .bestseller_box .cont .price p {
+article .art1_container3 .container1 .container1_content_box ul li .recommand_box .cont .price p {
   font-size: 1rem;
 }
