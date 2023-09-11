@@ -91,48 +91,51 @@ section{
     .sec_container1{
         display:flex;
         align-items:center;
-        width:1310px;
+        width:1280px;
         height:157px;
         margin:0 auto;
-        .sec_container1_box{
-            width:259px;
+        ul{
             display:flex;
-            align-items:center;
-            padding : 0 15px 0 0;
-            .img{
-                width:80px;
-                height:80px;
-                border:0.5px solid #e6e6e6;
-                border-radius:70%;
-                background:no-repeat center / cover;
+            li{
+                width:259px;
+                .sec_container1_box{
+                    width:100%;
+                    display:flex;
+                    align-items:center;
+                    .img{
+                        width:80px;
+                        height:80px;
+                        border:0.5px solid #e6e6e6;
+                        border-radius:70%;
+                        background:no-repeat center / cover;
 
-            }
-            .cont{
-                width:57%;
-                padding : 0 0 0 7px;
-                .title{
-                    display:flex;
-                    flex-wrap:wrap;
-                    font-size:0.9rem;
-                    padding:0 0 7px 0;
-                }
-                .author{
-                    display:flex;
-                    font-size:0.85rem;
-                    color:#A1A2A2;
+                    }
+                    .cont{
+                        width:65%;
+                        padding : 0 0 0 7px;
+                        .title{
+                            display:flex;
+                            flex-wrap:wrap;
+                            font-size:0.9rem;
+                            padding:0 0 7px 0;
+                        }
+                        .author{
+                            display:flex;
+                            font-size:0.85rem;
+                            color:#A1A2A2;
+                        }
+                    }
                 }
             }
         }
-
     }
     .sec_container2{
         width:100%;
         .sec_container2_con{
-            width:1310px;
+            width:1280px;
             margin:0 auto;
             display:flex;
             justify-content:space-between;
-            padding:0 15px;
            .img_box{
             width:800px;
             height:365px;
@@ -504,5 +507,95 @@ article{
             }
         }
     }
+    .art1_container4{
+        width:1290px;
+        margin:0 auto;
+        padding-top:135px;
+        padding-bottom:15px;
+        .container4_header{
+            width: 100%;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            p{
+                font-size:0.93rem;
+                color:#999;
+                padding: 20px 0;
+            }
+            img{
+                width:65px;
+            }
+        }
+        .container4_con{
+            width:100%;
+            margin-top:23px;
+            ul{
+                width:100%;
+                height:100%;
+                display:flex;
+                flex-wrap:wrap;
+                li{
+                    width:20%;
+                    height:234px;
+                    .story_box{
+                        .img{
+                            width:100%;
+                            height:100%;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .noti{
+        width:100%;
+        background-color:#F5F8FB;
+        display:flex;
+        margin-top:105px;
+        padding-top: 77px;
+        padding-bottom: 75px;
+        .noti_box{
+            width:1280px;
+            margin: 0 auto;
+            display:flex;
+            justify-content:space-between;
+            .noti_box1{
+                    width:50%;
+                    display:flex;
+                    .noti_header{
+                        width:140px;
+                        height:100px;
+                        display:flex;
+                        flex-direction:column;
+                        justify-content:space-between;
+                        h3{color:#005BBB}
+                        p{
+                            font-size:0.9rem;
+                            color:#555;
+                        }
+                    }
+                    .noti_cont{
+                        width:100%;
+                        height:100%;
+                        ul{
+                            display:flex;
+                            flex-direction:column;
+                            justify-content:space-between;
+                            width:100%;
+                            height:100%;
+                            
+                        }
+                    }
+                }
+
+        }  
+    }
+
 }
+
+
+
+
+
 
