@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
     const banner = new Swiper(".secSwiper", {
+        grabCursor: true,
         speed: 500,
         autoplay: {
             delay: 3000
@@ -22,5 +23,6 @@ window.addEventListener("load", () => {
           el: ".swiper-pagination",
           clickable: true,
         },
+        grabCursor: true,
       });
 })

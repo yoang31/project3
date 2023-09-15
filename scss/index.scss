@@ -14,12 +14,45 @@ header{
             justify-content:space-between;
             .nav_bar_search{
                 display:flex;
-                li a {
-                    padding:1rem;
+                align-items:center;
+                li:nth-of-type(1){
+                    a{
+                        height:36px;
+                        display:block;
+                        padding:8px 21px 9px;
+                        background-color:#0c6eaf;
+                        color:#fff;
+                        font-size:0.87rem;
+                    }
+                }
+                li:nth-of-type(2){
+                    display:flex;
+                    align-items:center;
+                    a{
+                        height:36px;
+                        display:block;
+                        padding:8px 21px 9px;
+                        background-color:#1090fd;
+                        color:#fff;
+                        font-size:0.87rem;
+                        font-weight:800;
+                    }
+                    p{
+                        font-size:0.85rem;
+                        padding-left:5px;
+                    }
                 }
             }
             .nav_bar_login{
                 display:flex;
+                li{
+                    height:36px;
+                    a{
+                        padding:8px 13px;
+                        font-size:0.87rem;
+                        line-height:36px;
+                    }
+                }
             }
         }
     }
@@ -140,7 +173,6 @@ section{
             width:800px;
             height:365px;
             margin-top:30px;
-            background-color:palegreen;
            } 
            .sec_container2_seller{
             width:401px;
@@ -157,16 +189,13 @@ section{
                         padding:8px 0;
                         text-align:center;
                         box-shadow : 0 4px 20px 0 rgba(105, 125, 155, 0.15);
-                        a{
                         text-align:center;
                         font-size:0.95rem;
                         color :#666;
-                        }
                     }
-                    li:hover{
-                        color: #333;
-                        background-color: #fff;
-                        border: 1px solid #f1f3f6;
+                    .blue_button{
+                        color:#1090fd;
+                        border: 2px solid #1090fd;
                         box-shadow: none;
                     }
                 }
@@ -239,7 +268,7 @@ article{
                         color: #A69999;
                     }
                 }
-                .container1_header_subtitle{
+                .bestseller_subtitle{
                     p{font-size:0.9rem;
                       letter-spacing: -.01em;
                     }
@@ -264,6 +293,29 @@ article{
                                 width:100%;
                                 height:258px;
                                 margin-bottom:10px;
+                                position:relative;
+                                .bookimg_hovericon{
+                                    width:100%;
+                                    height:100%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;
+                                    .hover_icon{
+                                        width:50px;
+                                        height:50px;
+                                        background-color:#fff;
+                                        border-radius:100%;
+                                        opacity:0;
+                                    }
+                                    .hover_icon:nth-of-type(1){
+                                        margin-right:10px;
+                                    }
+                                }
+                            }
+                            .img:hover{
+                                .hover_icon{
+                                    opacity:0.8;
+                                }
                             }
                             .num{
                                 width:10%;
@@ -344,6 +396,29 @@ article{
                                 width:100%;
                                 height:258px;
                                 margin-bottom:10px;
+                                position:relative;
+                                .bookimg_hovericon{
+                                    width:100%;
+                                    height:100%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;
+                                    .hover_icon{
+                                        width:50px;
+                                        height:50px;
+                                        background-color:#fff;
+                                        border-radius:100%;
+                                        opacity:0;
+                                    }
+                                    .hover_icon:nth-of-type(1){
+                                        margin-right:10px;
+                                    }
+                                }
+                            }
+                            .img:hover{
+                                .hover_icon{
+                                    opacity:0.8;
+                                }
                             }
                             .cont{
                                 width:90%;
@@ -437,7 +512,7 @@ article{
             display:flex;
             .container1_header{
                 width:260px;
-                height:350px;
+                height:400px;
                 display:flex;
                 flex-direction:column;
                 justify-content:space-between;
@@ -448,6 +523,66 @@ article{
                     }
                     p{
                         color: #A69999;
+                    }
+                }
+                .container1_header_menu{
+                    ul{
+                        width:100%;
+
+                        li{ 
+                            width:130px;
+                            height:32px;
+                            padding: 4px 18px 2px 14px;
+                            margin-bottom:4px;
+                        }
+                        .btn6.container3_menu{
+                            border:2px solid #1090fd;
+                        }
+                        .btn6{
+                            position: relative;
+                            text-decoration: none;
+                            display:inline-block;
+
+                            border:1px solid transparent; 
+                             -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                            transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                          }
+                          
+                          .btn6::before {
+                            content: '';
+                            position: absolute;
+                            left: 0px;
+                            bottom:0px;
+                            width: 0%;
+                            height:2px;
+                            background: #58b0fa;
+                            display: block;
+                            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                            transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+                          }
+                          
+                          .btn6:hover::before {
+                            width:100%;
+                          }
+                          
+                          .btn6::after {
+                            content: '';
+                            position: absolute;
+                            right: 0px;
+                            top:0px;
+                            width: 0%;
+                            height:2px;
+                            background: #58b0fa;
+                            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+                            transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+                          }
+                          .btn6:hover::after {
+                            width:100%;
+                          }
+                          .btn6:hover{
+                            border-left:1px solid #58b0fa; 
+                            border-right:1px solid #58b0fa;
+                          }
                     }
                 }
                 .container1_header_subtitle{
@@ -475,6 +610,29 @@ article{
                                 width:100%;
                                 height:258px;
                                 margin-bottom:10px;
+                                position:relative;
+                                .bookimg_hovericon{
+                                    width:100%;
+                                    height:100%;
+                                    display:flex;
+                                    align-items:center;
+                                    justify-content:center;
+                                    .hover_icon{
+                                        width:50px;
+                                        height:50px;
+                                        background-color:#fff;
+                                        border-radius:100%;
+                                        opacity:0;
+                                    }
+                                    .hover_icon:nth-of-type(1){
+                                        margin-right:10px;
+                                    }
+                                }
+                            }
+                            .img:hover{
+                                .hover_icon{
+                                    opacity:0.8;
+                                }
                             }
                             .cont{
                                 width:90%;
@@ -537,10 +695,41 @@ article{
                 li{
                     width:20%;
                     height:234px;
+                    overflow: hidden;
                     .story_box{
+                        position:relative;
                         .img{
                             width:100%;
                             height:100%;
+                            transition: all 0.2s linear;
+                        }
+                        .cardbook_pan{
+                            display:none;
+                            width:100%;
+                            height:100%;
+                            background-color:#27AFB8;
+                            opacity:0.9;
+                            transition: all 0.2s linear;
+                            position:absolute;
+                            top:0px;
+                            left:0px;
+                            .cont{
+                                width:100%;
+                                height:100%;
+                                display:flex;
+                                flex-direction:column;
+                                align-items:center;
+                                justify-content:center;
+                                .title{
+                                    color:#fff;
+                                    margin-bottom:10px;
+                                }
+                                .author{
+                                    color:#fff;
+                                    display:flex;
+                                    font-size:0.9rem;
+                                }
+                            }
                         }
                     }
                 }
