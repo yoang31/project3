@@ -71,7 +71,7 @@ function seller(e,classname,contname){
 
     for(var i =0; i < nodes.length; i++){
         nodes[i].classList.remove(classname);
-    }
+    }//초기화
     nodes[index].classList.add(classname);
 
     let seller_cont = document.querySelectorAll(contname);
@@ -80,24 +80,7 @@ function seller(e,classname,contname){
         seller_cont[i].style.display = "none";
     }
     seller_cont[index].style.display = "";
-    
-    
 }
-
-//card 책 이미지 hover 효과
-
-// let pan = document.querySelectorAll(".cardbook_pan");
-// console.log(pan);
-// for(var i=0; i<pan.length; i++){
-//     pan[i].addEventListener('mouseover', (event) => {
-//         console.log("1");
-//         event.target.parentElement.children[0].style.transform = "scale(1.15)";
-//     });
-//     pan[i].addEventListener('mouseleave', (event) => {
-//         event.target.parentElement.children[0].style.transform = "scale(1)";
-//     });
-
-// }
 
 
 //card book hover 기능 ...

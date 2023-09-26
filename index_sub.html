@@ -83,55 +83,60 @@
                                 <p class="book_author"></p>
                                 <p>/</p>
                                 <p class="book_publisher"></p>
+                                <p>리뷰 0 / 한줄평 3</p>
                             </div>
-                            <div class="price_box">
-                                <ul class="price">
-                                    <li>정가</li>
-                                    <li class="book_price"></li>
-                                </ul>
-                                <ul class="price">
-                                    <li>판매가</li>
-                                    <li class="book_saleprice">19,800원<span>[10%할인]</span></li>
-                                </ul>
-                            </div>
-                            <div class="price_box">
-                                <ul class="price">
-                                    <li>포인트</li>
-                                    <li>1,100P 적립</li>
-                                </ul>
-                                <ul class="price">
-                                    <li>배송비</li>
-                                    <li>무료</li>
-                                </ul>
-                                <ul class="price">
-                                    <li>ISBN</li>
-                                    <li>9791158512767</li>
-                                </ul>
-                                <ul class="price">
-                                    <li>택배배송</li>
-                                    <li>9월 15일(금요일) 발송</li>
-                                </ul>
-                                <ul class="price">
-                                    <li>서점(매장)픽업</li>
-                                    <li>결제페이지에서 '서점(매장)픽업'을 선택해 주세요.<br>
-                                        서점찾기를 통해 단골서점 또는 가까운 서점에서 수령하실 수 있습니다.</li>
-                                </ul>
-                            </div>
-                            <div class="price_box">
-                                <ul class="price">
-                                    <li>수량</li>
-                                    <li>
+                            <table cellspacing="0" style="border-collapse:collapse">
+                                <tr>
+                                    <th>정가</th>
+                                    <td style="color: #999;"><p class="book_price"></p>원</td>
+                                </tr>
+                                <tr>
+                                    <th>판매가</th>
+                                    <td style="font-size:1.7rem;color:black;"><p class="book_saleprice"></p><p style="color: #999;">원</p>&nbsp&nbsp&nbsp<p style="font-size:0.9rem;">[10%할인]</p></td>
+                                </tr>
+                                <tr style="border-top:1px solid #e6e6e6;">
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>포인트</th>
+                                    <td>1,100P 적립</td>
+                                </tr>
+                                <tr>
+                                    <th>배송비</th>
+                                    <td>무료</td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <td>9791158512767</td>
+                                </tr>
+                                <tr>
+                                    <th>택배배송</th>
+                                    <td>9월 15일(금요일) 발송</td>
+                                </tr>
+                                <tr>
+                                    <th>서점(매장)픽업</th>
+                                    <td>결제페이지에서 '서점(매장)픽업'을 선택해 주세요.<br>
+                                        서점찾기를 통해 단골서점 또는 가까운 서점에서 수령하실 수 있습니다.</td>
+                                </tr>
+                                <tr style="border-top:1px solid #e6e6e6;">
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>수량</th>
+                                    <td>
                                         <dl>
-                                            <dd><button>-</button></dd>
-                                            <dd><input /></dd>
-                                            <dd><button>+</button></dd>
+                                            <dd><button class="num_minus" onclick=num_minus()>-</button></dd>
+                                            <dd class="dd"><input class="num_input"  onchange="input()" value="1"/></dd>
+                                            <dd><button class="num_plus" onclick=num_plus()>+</button></dd>
                                         </dl>
-                                    </li>
-                                </ul>
-                            </div>
+                                    </td>
+                                </tr>
+                            </table>
                             <div class="total">
                                 <p>총 상품금액</p>&nbsp&nbsp&nbsp
-                                <p>19,000<p>&nbsp
+                                <p class="book_saleprice"><p>&nbsp
                                 <p>원</p>
                             </div>
                             <div class="pay_button_box">
@@ -161,8 +166,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -181,8 +186,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -201,8 +206,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -221,8 +226,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -241,8 +246,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -261,88 +266,8 @@
                                         <p class="book_publisher"></p>
                                     </div>
                                     <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="best_seller_book_box">
-                            <a href ="#" class="best_seller_book">
-                                <div class="img" style="background-image:url();">
-                                </div>
-                                <div class="cont">
-                                    <div class="book_title">
-                                        <p></p>
-                                    </div>
-                                    <div class="author">
-                                        <p class="book_author"></p>
-                                        <p>/</p>
-                                        <p class="book_publisher"></p>
-                                    </div>
-                                    <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="best_seller_book_box">
-                            <a href ="#" class="best_seller_book">
-                                <div class="img" style="background-image:url();">
-                                </div>
-                                <div class="cont">
-                                    <div class="book_title">
-                                        <p></p>
-                                    </div>
-                                    <div class="author">
-                                        <p class="book_author"></p>
-                                        <p>/</p>
-                                        <p class="book_publisher"></p>
-                                    </div>
-                                    <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="best_seller_book_box">
-                            <a href ="#" class="best_seller_book">
-                                <div class="img" style="background-image:url();">
-                                </div>
-                                <div class="cont">
-                                    <div class="book_title">
-                                        <p></p>
-                                    </div>
-                                    <div class="author">
-                                        <p class="book_author"></p>
-                                        <p>/</p>
-                                        <p class="book_publisher"></p>
-                                    </div>
-                                    <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="best_seller_book_box">
-                            <a href ="#" class="best_seller_book">
-                                <div class="img" style="background-image:url();">
-                                </div>
-                                <div class="cont">
-                                    <div class="book_title">
-                                        <p></p>
-                                    </div>
-                                    <div class="author">
-                                        <p class="book_author"></p>
-                                        <p>/</p>
-                                        <p class="book_publisher"></p>
-                                    </div>
-                                    <div class="price">
-                                        <p class="book_price"></p>
-                                        <p class="book_saleprice"></p>
+                                        <p class="book_price"></p>&nbsp
+                                        <p class="book_saleprice"></p>원
                                     </div>
                                 </div>
                             </a>
@@ -351,18 +276,202 @@
                 </div>
                 <div class="book_detail">
                     <div class="detail_header">
-                        <ul>
-                            <li class="border_line_blue">도서(상품)설명</li>
-                            <li>한줄평/리뷰</li>
-                            <li>배송/반품/교환정책</li>
+                        <ul id="menu1">
+                            <li class="border_line_blue"><a href="#menu1">도서(상품)설명</a></li>
+                            <li><a href="#menu2">한줄평/리뷰</a></li>
+                            <li><a href="#menu3">배송/반품/교환정책</a></li>
                         </ul>
                     </div>
                     <div class="book_info">
-                        <h4>정보고시</h4>
+                        <h4>정보고지</h4>
+                        <table cellspacing="0" style="border-collapse:collapse">
+                            <tr>
+                                <th>도서명</th>
+                                <td>도시와 그 불확실한 벽 (양장)</td>
+                            </tr>
+                            <tr>
+                                <th>지음/옮김</th>
+                                <td>무라카미 하루키 / 홍은주</td>
+                                <th>크기</th>
+                                <td>128*188mm</td>
+                            </tr>
+                            <tr>
+                                <th>쪽수</th>
+                                <td>768쪽</td>
+                                <th>무게</th>
+                                <td>1075g</td>
+                            </tr>
+                            <tr>
+                                <th>출간일</th>
+                                <td>2023년 09월 06일</td>
+                                <th>출판사</th>
+                                <td>문학동네</td>
+                            </tr>
+                            <tr>
+                                <th>KC인증/인증번호</th>
+                                <td></td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </table>
+                        <div class="book_info_box">
+                            
+                        </div>
+                    </div>
+                    <div class="detail_header">
+                        <ul id="menu2">
+                            <li><a href="#menu1">도서(상품)설명</a></li>
+                            <li class="border_line_blue"><a href="#menu2">한줄평/리뷰</a></li>
+                            <li><a href="#menu3">배송/반품/교환정책</a></li>
+                        </ul>
+                    </div>
+                    <div class="review_box">
+                        <p class="review_point"><b>* 구매 후 리뷰 작성 시 <span>500P</span> ,한줄평 작성 시 <span>20P</span> 를 드립니다.</b><a href="#"><span>ⓘ리뷰/한줄평 정책 안내 보기</span></a></p>
+                        <div class="review_cont">
+                            <p>한줄평</p>
+                            <div class="review_txt_box">
+                                <input type="text" placeholder="0/500">
+                                <button>등록</button>
+                            </div>
+                            <div class="reviews">
+                                <div class="reviewss">
+                                    <div class="name_date">
+                                        <p>017260****</p>
+                                        <p>2023-09-11</p>
+                                    </div>
+                                    <div class="content">
+                                        무라카미 하루키의 신작이라니 정말 기대됩니다!
+                                    </div>
+                                </div>
+                                <div class="reviewss">
+                                    <div class="name_date">
+                                        <p>017260****</p>
+                                        <p>2023-09-11</p>
+                                    </div>
+                                    <div class="content">
+                                        정말 오랜만의 장편소설!! 너무 기대됩니다
+                                    </div>
+                                </div>
+                                <div class="reviewss">
+                                    <div class="name_date">
+                                        <p>017260****</p>
+                                        <p>2023-09-11</p>
+                                    </div>
+                                    <div class="content">
+                                        드디어 나왔네요 잘 읽을께여!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review_star">
+                                <h4>리뷰</h4>
+                                <div class="review_star_cont1">
+                                    <h1>0 / 5<span> 0명()</span></h1>
+                                    <h3>Reviews 0</h3>
+                                    <button>리뷰작성</button>
+                                </div>
+                                <div class="review_star_cont2">
+                                    <div class="star_con">5 starts<div class="review_rec"></div></div>
+                                    <div class="star_con">4 starts<div class="review_rec"></div></div>
+                                    <div class="star_con">3 starts<div class="review_rec"></div></div>
+                                    <div class="star_con">2 starts<div class="review_rec"></div></div>
+                                    <div class="star_con">1 starts<div class="review_rec"></div></div>
+                                </div>
+                                <div class="review_star_cont3">
+                                    <p>View</p>
+                                    <div class="star_cont3_button">
+                                        <button>높은평점순</button><button>최신순</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_header">
+                        <ul id="menu3">
+                            <li><a href="#menu1">도서(상품)설명</a></li>
+                            <li><a href="#menu2">한줄평/리뷰</a></li>
+                            <li class="border_line_blue"><a href="#menu3">배송/반품/교환정책</a></li>
+                        </ul>
+                    </div>
+                    <div class="policy_box">
+                        <div class="delivery">
+                            <h3>배송안내</h3>
+                            <p>주문하신 상품은 상품 종류 및 배송지역에 따라 택배배송, 서점배송, 업체배송 등의 방식으로 진행됩니다.</p>
+                            <p>(단, 일부 사서함/관공서 택배 발송은 불가능할 수 있으며, 도서산간지역의 경우 택배 배송이 1~2일 정도 더 소요 될 수 있습니다.)</p>
+                            <p>배송기간 : 재고 보유 및 배송조건에 따라 당일에서 최대 3일 가량 소요 (추가 지연시 별도 안내)</p>
+                            <p>배송비 : 도서 상품의 주문은 모두 무료배송이며, 일부 도서 외 상품의 경우 배송비가 발생합니다. 도서산간 지역은 추가 배송비가 부과될 수 있습니다.</p>
+                        </div>
+                        <div class="delivery pos">
+                            <h3>교환/반품이 가능한 경우</h3>
+                            <p>배송 받은 상품이 주문한 상품과 다른 경우</p>
+                            <p>소비자에게 인도될 당시 상품이 훼손된 경우</p>
+                            <p>상품의 유효기간이 지난 경우</p>
+                        </div>
+                        <div class="delivery imp">
+                            <h3>교환/반품이 불가능한 경우</h3>
+                            <p>고객 과실로 상품의 일부가 분실 혹은 파손된 경우</p>
+                            <p>상품 불량을 제외한 개봉으로 인한 상품 가치의 훼손으로 재판매가 불가능한 경우</p>
+                            <p>복제 또는 단기 완독이 가능한 상품의 포장이나 랩핑이 훼손된 경우 (잡지, 만화, 학습서, 교재 등)</p>
+                            <p>세트 상품의 일부 교환/반품의 경우 (전체 상품의 교환/반품만 가능)</p>
+                        </div>
+                        <div class="delivery etc">
+                            <h3>기타 교환/반품 관련 안내</h3>
+                            <p>고객 변심 혹은 과실(오주문)로 인한 상품 교환/반품의 배송비는 고객이 부담</p>
+                            <p>상품 불량 혹은 하자로 인한 교환/반품의 경우는 사이트에서 배송료 부담</p>
+                            <p>기타 교환/반품과 관련한 문의사항은 고객센터 혹은 1:1 문의를 이용하여 주시기 바랍니다.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </article>
+        <footer>
+            <div class="footer_contain">
+                <div class="footer_header">
+                    <img src="img/footer_logo.png">
+                </div>
+                <div class="footer_box">
+                    <div class="footer_box_content1">
+                        <div class="content1_info">
+                            <p>(주)웅진북센&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;대표:이정훈&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 주소:[00000]경기도 수원시 만발로 00&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;개인정보보호책임자:홍길동 hong@000000.com</p>
+                            <p>사업자등록번호:128-81-22320&nbsp;&nbsp;&nbsp;<span><a>사업자정보확인 > </a></span> &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;통신 판매업신고번호:제0000-경기수원-0000호</p>
+                        </div>
+                        <div class="copy">
+                            <p>Copyright© (주)웅진북센 All Right Reserved.</p>
+                        </div>
+                        <div class="footer_header">
+                            <ul>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">바로보네서점</a></li>
+                                <li><a href="#">법인대량구매</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                <li><a href="#">서점관리자</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_box_content2">
+                        <div class="content2_title">
+                            Customer Center
+                        </div>
+                        <div class="content2_number">
+                            031-955-2840
+                        </div>
+                        <div class="opening_hours">
+                            <p>AM 09:00 ~ PM 18:00 (점심 12:00 ~ 13:00) 토,일요일 및 공휴일 휴무</p>
+                        </div>
+                        <div class="family">
+                            <img src="img/escrow_43x43_gray.png">
+                            <select>
+                                <option value="" disabled selected>Family Site</option>
+                                <option value="booksen">웅진북센</option>
+                                <option value="orderbook">오더북</option>
+                                <option value="oujin">(주)웅진</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="scripts/index_sub.js"></script>
 </body>

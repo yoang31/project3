@@ -1,2 +1,186 @@
 @charset "utf-8";
+ 
+header{
+    width:100%; 
+    .nav_bar{
+        width:100%;
+        border: 1px solid #e6e6e6;
+        .nav_bar_con{
+            width:1280px;
+            margin: 0 auto;
+            display:flex;
+            justify-content:space-between;
+            .nav_bar_search{
+                display:flex;
+                align-items:center;
+                li:nth-of-type(1){
+                    a{
+                        height:36px;
+                        display:block;
+                        padding:8px 21px 9px;
+                        background-color:#0c6eaf;
+                        color:#fff;
+                        font-size:0.87rem;
+                    }
+                }
+                li:nth-of-type(2){
+                    display:flex;
+                    align-items:center;
+                    a{
+                        height:36px;
+                        display:block;
+                        padding:8px 21px 9px;
+                        background-color:#1090fd;
+                        color:#fff;
+                        font-size:0.87rem;
+                        font-weight:800;
+                    }
+                    p{
+                        font-size:0.85rem;
+                        padding-left:5px;
+                    }
+                }
+            }
+            .nav_bar_login{
+                display:flex;
+                li{
+                    height:36px;
+                    a{
+                        padding:8px 13px;
+                        font-size:0.87rem;
+                        line-height:36px;
+                    }
+                }
+            }
+        }
+    }
+    .header_sec{
+        width:100%;
+        .header_sec_con{
+            width:1280px;
+            margin:0 auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            .header_sec_logo{
+                display:flex;
+                align-items:center;
+                height:100px;
+            }
+            .h_sec_search_box{
+                width:500px;
+                height:100px;
+                display:flex;
+                align-items:center;
+                .h_sec_search_con{
+                    display:flex;
+                    align-items:center;
+                    width:100%;
+                    height:55px;
+                    border:0.18rem solid #1090FD;
+                    border-radius:2rem;
+                    overflow:hidden;
+                    input{
+                        width:80%;
+                        height:100%;
+                        border:none;
+                        margin:0 1.5rem;
+                        font-size:0.95rem;
 
+                    }
+                    input:focus {outline: none;}
+                    .h_sec_search_img{
+                        width:10%;
+                        img{
+                            width:25px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .header_menus{
+        width:100%;
+        .header_menus_con{
+            width:1310px;
+            margin:0 auto;
+            display:flex;
+            .header_menus_menu{
+                ul{
+                    display:flex;
+                    align-items:center;
+                    li{margin:0 23px; 
+                        height:73px;
+                        display:flex;
+                        align-items:center;
+                        font-size:1.16rem;
+                        font-weight:bold;
+                    }
+                    li img{width:24px;}
+                }
+            }
+        }
+    }
+}
+footer{
+    width:100%;
+    height:350px;
+    padding:20px;
+    .footer_contain{
+        width:1280px;
+        height:100%;
+        margin:0 auto;
+        .footer_header{
+            img{
+                width:280px;
+            }
+        }
+        .footer_box{
+            display:flex;
+            .footer_box_content1{
+                width:65%;
+                font-size:0.80rem;
+                margin-top:20px;
+                line-height:30px;
+                .copy{
+                    margin-top: 20px;
+                    color:#0C6DAF;
+                }
+            }
+            .footer_header{
+                margin-top:55px;
+                font-size:0.87rem;
+                width:70%;
+                ul{
+                    display:flex;
+                    justify-content:space-between;
+                }
+            }
+            .footer_box_content2{
+                width:35%;
+                margin-top:20px;
+                color:#0C6DAF;
+                .content2_number{
+                    font-size:1.8rem;
+                    margin:20px 0;
+                }
+                .opening_hours{
+                    font-size:0.9rem;
+                    color: #292929;
+                }
+                .family{
+                    margin-top:50px;
+                    display:flex;
+                    justify-content:space-between;
+                    select{
+                        width:60%;
+                        border:none;
+                        border-bottom:1px solid #e6e6e6;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    } 
+}

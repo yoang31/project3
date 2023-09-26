@@ -1,3 +1,5 @@
+@import "reset" , "common";
+
 article{
     width:100%;
     #book_info_box{
@@ -39,27 +41,43 @@ article{
                         }
                     }
                     .author{
-                        display:flex;
                         padding-top:10px;
-                        padding-bottom:15px;
+                        padding-bottom:30px;
                         border-bottom:2px solid #999999;
                         p{
                             color:#9999A3;
-                            font-size:0.95rem;
+                            float: left;                            
+                        }
+                        p:nth-of-type(4){
+                            font-size:0.8rem;
+                            float: right;
                         }
                     }
-                    .price_box{
+                    table{
+                        margin-top: 20px;
                         width:100%;
-                        padding:20px 0;
                         border-bottom:1px solid #e6e6e6;
-                        .price{
-                            display:flex;
-                            li:nth-of-type(1){
+                        tr{
+                            th{
+
                                 width:30%;
-                                margin-bottom:10px;
+                                font-size:0.9rem;
+                                text-align:left;
+                                padding-bottom:15px;
+                                color:#333333;
+
+                            }
+                            td{
+                                width:100%;
+                                display:flex;
+                                padding-bottom:15px;
+                                align-items:center;
+                                font-size:0.9rem;
+                                color:#666666;
                             }
                             dl{
                                 display:flex;
+                                border:1px solid #e6e6e6;
                                 dd{
                                     button{
                                         width:35px;
@@ -178,6 +196,7 @@ article{
         }
         .book_detail{
             .detail_header{
+                margin-top:80px;
                 width:100%;
                 ul{
                     display:flex;
@@ -188,8 +207,9 @@ article{
                         background-color:#F9F9F9;
                         text-align:center;
                         line-height:50px;
-                        color:#999999;
-                        
+                        a{
+                            color:#999999;
+                        }
                     }
                     li:nth-of-type(2){
                         border-right:none;
@@ -198,11 +218,196 @@ article{
                     .border_line_blue{
                         border-top:2px solid #0C6EAF;
                         background-color:#fff;
+                        a{
+                            color:#0C6EAF;
+                            font-weight:bold;
+                        }
                     }
                 }
             }
             .book_info{
                 padding:30px;
+                table{
+                    margin-top:15px;
+                    width:100%;
+                    border-top:2px solid #555555;
+                    tr{
+                      width:100%;
+                      border-bottom:1px solid #EDEDED;
+                      th{
+                        width:18%;
+                        height:40px;
+                        background-color:#F9F9F9;
+                        text-align:left;
+                        padding-left:15px;
+                        font-weight:lighter;
+                        font-size:0.95rem;
+                      }
+                      td{
+                        width:30%;
+                        padding-left:15px;
+                        font-size:0.9rem;
+                        color:#333333;
+                      }  
+                    }
+                }
+            }
+            .review_box{
+                padding:30px;
+                display:flex;
+                flex-direction:column;
+                .review_point{
+                    align-self:flex-end;
+                    font-size:0.85rem;
+                    b{
+                        span{
+                            color:#096DAE;
+                        }
+                    }
+                    span:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .review_cont{
+                    margin-top:70px;
+                    .review_txt_box{
+                        margin-top:20px;
+                        width:100%;
+                        padding : 25px 20px;
+                        background-color:#F7F7F7;
+                        border:1px solid #e6e6e6;
+                        input{
+                            width:90%;
+                            height:120px;
+                            text-align:left;
+                            outline: none;
+                            border:1px solid #e6e6e6;
+                        }
+                        button{
+                            margin-left:20px;
+                            width:90px;
+                            height:40px;
+                            border-radius:3px;
+                            border:none;
+                            background-color:#0c99d6;
+                            color:#fff;
+                        }
+                    }
+                    .reviews{
+                        margin-top:50px;
+                        border-top:1px solid #999999;
+                        border-bottom: 1px solid #999999;
+                        .reviewss{
+                            width:100%;
+                            height:107px;
+                            border-bottom:1px solid #e6e6e6;
+                            display:flex;
+                            flex-direction:column;
+                            padding:20px 0;
+                            justify-content:space-between;
+                            font-size:0.83rem;
+                            .name_date{
+                                display:flex;
+                                p:nth-of-type(1){
+                                    margin-right:50px;
+                                }
+                            }
+                        }
+                        .reviewss:last-of-type{
+                            border-bottom:none;
+                        }
+                    } 
+                    .review_star{
+                        display:flex;
+                        margin:60px 0;
+                        .review_star_cont1{
+                            width:21%;
+                            height:150px;
+                            display:flex;
+                            flex-direction:column;
+                            align-items:center;
+                            justify-content:space-around;
+                            h1{
+                                span{
+                                    font-size:0.85rem;
+                                    color:#9C9F9F;
+                                }
+                            }
+                            h3{
+                                font-size:0.92rem;
+                            }
+                            button{
+                                width:90px;
+                                height:37px;
+                                background-color:#0c99d6;
+                                color:#fff;
+                                border:none;
+                                border-radius:3px;
+                            }
+                        }
+                        .review_star_cont2{
+                            display:flex;
+                            flex-direction:column;
+                            align-items:center;
+                            justify-content:center;
+                            width:46%;
+                            border-right:1px solid #e6e6e6;
+                            border-left:1px solid #e6e6e6;
+                            height:150px;
+                            .star_con{
+                                display:flex;
+                                font-size:0.85rem;
+                                .review_rec{
+                                    width:328px;
+                                    height:15px;
+                                    background-color:#F5F5F5;
+                                    margin-left:20px;
+                                }
+                            }
+                        }
+                        .review_star_cont3{
+                            width:30%;
+                            height:150px;
+                            display:flex;
+                            flex-direction:column;
+                            align-items:center;
+                            justify-content:center;
+                            p{
+                                
+                            }
+                            .star_cont3_button{
+                                width:90%;
+                                display:flex;
+                                justify-content:space-evenly;
+                                height:34px;
+                                margin-top:10px;
+                                button{
+                                    width:160px;
+                                    height:34px;
+                                    border:none;
+                                    background-color:#c9c9c9;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .policy_box{
+                margin-top:20px; 
+                width:100%;
+                padding:30px;
+                .delivery{
+                    margin-bottom:50px;
+                    h3{
+                        color: #0C6EAF;
+                        margin-bottom:20px;
+                    }
+                    p{
+                        margin-bottom:15px;
+                        font-size:0.87rem;
+                        color:#808684;
+                    }
+                }
             }
         }
     }
