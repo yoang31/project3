@@ -205,6 +205,7 @@ footer .footer_contain .footer_box .footer_box_content2 .family select {
 
 article {
   width: 100%;
+  border-bottom: 1px solid #e6e6e6;
 }
 article #book_info_box {
   width: 1280px;
