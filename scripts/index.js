@@ -3,13 +3,13 @@ var search = ["잔망뤂세이:0","나는 왜 자꾸 내 탓을 할까:0","몸�
 ajax_Fuc(search,'.sec_container1_box',24);
 var seller1 = ["도시와 그 불확실한 벽:0","디케의 눈물:0","푸른 사자 와니니6:0"];
 ajax_Fuc(seller1,'.seller_contents:nth-of-type(1) .seller_box',22);
-var seller2 = ["행복한:0","꼬마버스:0","말문트기:0"];
+var seller2 = ["우리:0","꼬마버스:0","말문트기:0"];
 ajax_Fuc(seller2,'.seller_contents:nth-of-type(2) .seller_box',22);
 var seller3 = ["나를 지키는 관계가 먼저입니다:0","집착의 법칙:0","인정욕구:0"];
 ajax_Fuc(seller3,'.seller_contents:nth-of-type(3) .seller_box',22);
 
 
-var bestseller = ["1%를 읽는 힘:0","세이노의 가르침:0","내 소리가 제일 커:0","아메리칸 아메리칸 프로메테우스:0","최소한의 한국사:0","뽀로로 쉑쉑:0","문과 남자의 과학 공부:0","꼬마버스 타요 고고 사운드북:0","도둑맞은 집중력:0","주식:0"];
+var bestseller = ["1%를 읽는 힘:0","세이노의 가르침:0","라스트 젤리 샷:0","아메리칸 아메리칸 프로메테우스:0","최소한의 한국사:0","뽀로로 쉑쉑:0","문과 남자의 과학 공부:0","꼬마버스 타요 고고 사운드북:0","도둑맞은 집중력:0","주식:0"];
 ajax_Fuc(bestseller,'.bestseller_box',20);
 var newbook = ["21세기 한국 지성의 몰락:0","설민석의 한국사 대모험26:0","Go Go 카카오프렌즈 29:0","결혼ㆍ여름:0","정재승의 인간 탐구 보고서 12:0"];
 ajax_Fuc(newbook,'.newbook_box',20);
@@ -59,6 +59,16 @@ function ajax_Fuc(search,classname,num){
                 document.querySelectorAll(classname+" .cont .author p:nth-of-type(1)")[i].innerHTML=data[search_index].authors; //작가
                 document.querySelectorAll(classname+" .cont .author p:nth-of-type(3)")[i].innerHTML=data[search_index].publisher;  //출판사
                 }
+                let price = data[search_index].price;  //정가
+                let saleprice = data[search_index].sale_price+""; //세일가
+                let sale_per = ((price-data[search_index].sale_price)/price)*100;
+
+                saleprice = saleprice.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+                if(document.querySelectorAll(classname+" .cont .price").length > 0){
+                    document.querySelectorAll(classname+" .cont .price p:nth-of-type(1)")[i].innerHTML=saleprice;
+                    document.querySelectorAll(classname+" .cont .price p:nth-of-type(4)")[i].innerHTML=sale_per;
+                }
+
             });
     }
 }

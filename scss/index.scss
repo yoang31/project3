@@ -110,6 +110,13 @@ section{
                                     color:#9FA19F;
                                     padding-top:4px;
                                 }
+                                .price{
+                                    margin-top:10px;
+                                    display:flex;
+                                    p:nth-of-type(1){
+                                        font-weight:bold;
+                                    } 
+                                }
                             }
                         }
                     }
